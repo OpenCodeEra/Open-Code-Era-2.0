@@ -1,16 +1,62 @@
-nav {
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  scroll-behavior: smooth;
+}
+span{
+  color: rgb(20,135,223);
+}
+header {
+  z-index: 999;
+  position: fixed;
+  background: rgba(255, 255, 255, 0.1);
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 15px 200px;
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  height: 10%;
-  border-bottom-left-radius: 25px;
-  border-bottom-right-radius: 25px;
-  background-color: #000000;
-  color: #e7e9ea;
-  padding: 0 2.5%;
+  transition: 0.5s ease;
+}
+header.sticky{
+  background: #3a6cf4;
+  padding: 10px 200px;
+}
+header .left
+{
+    margin-left: -110px;
+}
+header .brand{
+  color: #fff;
+  font-size: 1.8em;
+  font-weight: 700;
+  
+  text-decoration: none;
 }
 
+header .navigation{
+  position: relative;
+}
+
+header .navigation a{
+  color: #ffffff;
+  font-size: 1em;
+  font-weight: 500;
+  text-decoration: none;
+  margin-left: 30px;
+}
+
+header .navigation a:hover{
+  color: #3a6cf4;
+}
+
+header.sticky .navigation a:hover{
+  color: #000;
+}
+/*
 nav > h1 {
   flex-grow: 1;
 }
@@ -21,7 +67,7 @@ nav > a {
   color: #e7e9eaf8;
   font-weight: 550;
 
-  /* for underline effect */
+  /* for underline effect *
   display: inline-block;
   position: relative;
 }
@@ -43,7 +89,7 @@ nav > a:hover:after {
   transform: scaleX(1);
   transform-origin: bottom left;
 }
-
+*/
 .logo-icon {
   height: 26px;
   animation: spin-animation 5s infinite;
