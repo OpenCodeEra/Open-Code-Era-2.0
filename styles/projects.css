@@ -5,13 +5,10 @@
 .project-grid {
   height: 100%;
   width: 100%;
-
-
-   display: grid;
+  display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr; 
   gap: 5% 3%;
-
   background-color: #1e1e1e;
   padding: 1%;
   border-radius: 15px;
@@ -20,27 +17,21 @@
 .project {
   height: 100%;
   width: 100%;
-
   border-radius: 20px;
-
   border: 1px solid #eeeeee;
-
   position: relative;
 }
 
 .project > img {
   height: 75%;
   width: 100%;
-  border-radius: 20px 20px 0 0 ;
-  
+  border-radius: 20px 20px 0 0 ;  
 }
 
 .project:hover {
   box-shadow: 0 0 12px #666666;
   transition: 300ms;
 }
-
-
 
 .img {
   background-color: rgb(0, 81, 106);
@@ -60,25 +51,26 @@
 }
 
 .project-info-container {
-  margin: 1% 0 0 2.5%;
+  margin: 1% 0 0 2%;
 }
 
 .title-maintainer-container {
   display: flex;
   align-items: center;
-  margin-bottom: 1%;
-}
-
-.title-maintainer-container > h3 {
-  font-size: 14px;
+  margin-bottom: 0%;
 }
 
 .project-info-container > p {
   font-size: 10px;
 }
 
-.title-maintainer-container > img {
+.title-maintainer-container img {
   height: 20px;
   border-radius: 100%;
-  margin: 1% 2.5% 0 0;
+}
+
+.title-maintainer-container a {
+  margin: 0% 2% 0% 0%;
+  color: #c5c5c5;
+  font-size: 14px;
 }
