@@ -17,7 +17,7 @@ Please make sure you have read the following criteria before making a contributi
 <br>
 Change your working directory to the project's folder.
 ```
-cd repository name
+cd repository-name
 ```
 **4. Open the website file**
 <br>
