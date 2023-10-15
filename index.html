@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,10 +8,16 @@
 
   <link rel="stylesheet" href="./styles/globals.css">
   <link rel="stylesheet" href="./styles/navigation.css">
+  <link rel="stylesheet" href="./styles/index.css">
 
   <link rel="shortcut icon" href="./public/images/code-solid.svg" type="image/x-icon">
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans&family=Roboto:wght@500&display=swap" rel="stylesheet">
+
 </head>
+
 <body>
   <nav>
     <img src="./public/images/code-solid.svg" class="logo-icon">
@@ -25,9 +32,32 @@
   </nav>
 
   <section class="content">
+    <div class="first-box">
+      <div class="right-side">
+        <div class="font  dual-colort " >
+          Welcome contributors, evaluate your impact with open source <span id="element"></span>
+        </div>
+
+      </div>
+
+      <div class="left-side">
+        <img src="/public/images/coding.png" alt="">
+      </div>
+    </div>
 
 
   </section>
-    
+
+
+
+  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+  <script>
+    var typed = new Typed('#element', {
+      strings: ['community', 'innovation', 'projects', 'contribution'],
+      typeSpeed: 70,
+    });
+  </script>
+
 </body>
+
 </html>
