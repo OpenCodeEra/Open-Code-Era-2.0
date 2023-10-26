@@ -13,7 +13,6 @@
   gap: 12% 4%;
 
   text-align: left;
-
 }
 
 .content-grid > div > h2 {
@@ -26,15 +25,11 @@
   padding: 1.75%;
 }
 
-.join-button {
-  margin: auto;
+.highlight {
+  position: relative;
 }
 
-.highlight{
-  position:relative;
-}
-
-.highlight:before{
+.highlight:before {
   content: "";
   position: absolute;
   width: calc(100% + 4px);
@@ -69,16 +64,23 @@
 }
 
 .join-button {
-  border: none;
-  border-radius: 2rem;
+  display: block;
+  border: 1px solid white;
+  border-radius: 1.5rem;
   font-size: 1.5rem;
-
   font-weight: bold;
   background-color: #2b2a2a;
-  color: #ffffff;
-  
-  padding:0 15px 5px;
-
+  color: #dbd5d5;
+  padding: 16px 32px;
   cursor: pointer;
 }
 
+.join-button:hover {
+  background-color: #525151;
+  color: #fff;
+}
+
+.join-button:active {
+  background-color: #000000;
+  color: white;
+}
